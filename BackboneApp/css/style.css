@@ -72,6 +72,7 @@
 
 		.buttons{
 			text-align: center;
+            outline: none;
 		}
 		
         .home button{
@@ -121,7 +122,6 @@
         .topics div{
             display: inline-block;
             margin: 15px;
-            width: 30%;
         }
 		
 		.topics td{
