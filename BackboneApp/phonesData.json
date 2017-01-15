@@ -1,0 +1,33 @@
+[
+  { "manufacturer" : "Samsung",
+	"model" : "Galaxy S7 Edge",
+	"price" : "510$",
+	"color" : "Grey",
+	"description" : ""
+  },
+  { "manufacturer" : "Apple",
+	"model" : "iPhone 7 32GB",
+	"price" : "820$",
+	"color" : "Black",
+	"description" : ""
+  },
+  { "manufacturer" : "Samsung",
+	"model" : "Galaxy J7",
+	"price" : "240$",
+	"color" : "Grey",
+	"description" : ""
+  },
+  { "manufacturer" : "Huawei",
+	"model" : "P9",
+	"price" : "400$",
+	"color" : "Rose gold",
+	"description" : ""
+  },
+  { "manufacturer" : "Nexus",
+	"model" : "5",
+	"price" : "300$",
+	"color" : "White",
+	"description" : ""
+  }
+  
+]
