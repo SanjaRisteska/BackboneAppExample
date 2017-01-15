@@ -148,6 +148,20 @@
 			margin: 0;
 			text-align: center;
         }
+
+        .phoneItem{
+            width: 100%;
+            display:inline-block;
+            margin: 10px 0px;
+
+        }
+
+        .image{
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            padding: 10px;
+        }
 		
 		
 		@media screen and (max-width:960px) {
