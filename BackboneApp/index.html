@@ -54,19 +54,18 @@
 			</tr>
 		</table>    
 	</div>
-
-    <div class="topic">
-		<table>
-			<tr>
-				<td><span class="fa fa-anchor"></span></td>
-				<td><h4>Responsive Design</h4></td>
-			</tr>	
-			<tr>
-				<td></td>
-				<td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc metus orci, venenatis sit amet fermentum ut, scelerisque nec nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc metus orci, venenatis sit amet fermentum ut, scelerisque nec nisi.</p></td>
-			</tr>
-		</table>    
-	</div>
+    
+      <div id="allPhones"></div>
+    
+      <script id="phoneElement" type="text/template">
+          <a href="#<%= link %>"><img src="<%= img %>" alt="<%= model %>" class="image"/></a>
+            <ul>
+                <li class="phoneInfo"><strong>Manufacturer:</strong> <%= manufacturer %></li>
+                <li class="phoneInfo"><strong>Model:</strong> <%= model %></li>
+                <li class="phoneInfo"><strong>Price:</strong> <%= price %></li>
+                <li class="phoneInfo"><strong>Color:</strong> <%= color %></li>
+            </ul>
+    </script>
 
 </section>
 <section class="footer">
@@ -85,7 +84,6 @@
 <script src="js/views/AllPhonesView.js"></script> 
 <script src="js/collections/AllPhonesCollection.js"></script> 
 <script src="js/main/PhoneStoreApp.js"></script>
-<script src="js/routers/Router.js"></script> 
 
 </body>
 </html>
