@@ -6,7 +6,7 @@
         }
 
 
-        ul{
+        ul.menu{
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -15,14 +15,12 @@
             padding-right: 50px;
 			padding-top: 20px;
         }
-        li {
+        .menu li {
             float: right;
         }
-		
-		ul li.icon {display: none;}
-		
+				
 
-        li a {
+        .menu li a {
             display: block;
             color: #D50000;
             text-align: center;
@@ -30,7 +28,7 @@
             text-decoration: none;
         }
 		
-		#cartIcon{
+		.menu #cartIcon{
 			width: 20px;
 			height: 20px;
 		}
@@ -156,49 +154,6 @@
         }
 		
 		
-		@media screen and (max-width:960px) {
-  ul.menu li:not(:first-child) {display: none;}
-  ul.menu li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-/* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens */
-@media screen and (max-width:960px) {
-  ul.menu.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-	 padding-right: 150px;
-	padding-top: 20px;
-	
-  }
-    
-  ul.menu.responsive li:not(:first-child):not(:last-child) {
-    float: none;
-	display: block;
-	width: 100%;
-  }
-  ul.menu.responsive li:nth-child(2){
-	  	margin-top: 70px;
-  }
-  
-  ul.menu.responsive li a {
-    display: block;
-    text-align: left;
-  }
-  
-  ul.menu.responsive{
-	  position: absolute;
-	  width: 100%;
-	  background-color: black;
-  }
-  
-  ul.menu.responsive li a:hover {background-color: #111;}
-
-  
-}
 
 @media screen and (max-width:1280px){
 	  
