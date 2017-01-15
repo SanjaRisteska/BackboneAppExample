@@ -1,0 +1,200 @@
+		body{
+			background: url("../img/background.jpg") no-repeat;
+            color: white;
+            font-family: Tahoma;
+            margin: 0;
+        }
+
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            padding-left: 50px;
+            padding-right: 50px;
+			padding-top: 20px;
+        }
+        li {
+            float: right;
+        }
+		
+		ul li.icon {display: none;}
+		
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        h1{
+            font-weight: 100;
+        }
+		
+		.header{
+			height: 100px;
+			border-bottom: 1px solid rgb(255,255,255);
+		}
+
+
+        .home{
+            padding-top: 150px;
+            padding-bottom: 150px;
+			height: 100%;
+            
+        }
+
+        .home img{
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .home h1{
+            text-align: center;
+            font-size: 64pt;
+            margin: 10px;
+			font-weight: bold;
+
+        }
+
+        .home p{
+            text-align: center;
+        }
+
+		.buttons{
+			text-align: center;
+		}
+		
+        .home button{
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            padding: 10px;
+			margin-right:5px;
+        }
+		
+		.leftButton{
+			background: none;
+			border: 1px solid white;
+		}
+		
+		.rightButton{
+			background: red;
+			border: 0;
+		}
+
+        hr{
+            width: 500px;
+        }
+
+        .topics{
+            padding: 100px;
+            color: black;
+            text-align: left;
+            padding-bottom: 150px;
+			background:  white;
+        }
+
+        .topics img{
+            width: 50px;
+            height: 50px;
+        }
+		
+		
+		.topics span{
+			color: #3BB9FF;
+		}
+
+        .topics h1, .topics span {
+            font-size: 20pt;
+        }
+		
+		.topics p{
+			margin-top: 0;
+		}
+
+
+        .topics div{
+            display: inline-block;
+            margin: 15px;
+            width: 30%;
+        }
+		
+		.topics td{
+			padding-right: 10px;
+		}
+
+        .footer{
+            background-color: #333;
+            padding-left: 50px;
+            padding-right: 50px;
+            height: 80px;
+        }
+
+        .footer p{
+            padding-top: 30px;
+			margin: 0;
+			text-align: center;
+        }
+		
+		
+		@media screen and (max-width:960px) {
+  ul.menu li:not(:first-child) {display: none;}
+  ul.menu li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens */
+@media screen and (max-width:960px) {
+  ul.menu.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+	 padding-right: 150px;
+	padding-top: 20px;
+	
+  }
+    
+  ul.menu.responsive li:not(:first-child):not(:last-child) {
+    float: none;
+	display: block;
+	width: 100%;
+  }
+  ul.menu.responsive li:nth-child(2){
+	  	margin-top: 70px;
+  }
+  
+  ul.menu.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  
+  ul.menu.responsive{
+	  position: absolute;
+	  width: 100%;
+	  background-color: black;
+  }
+  
+  ul.menu.responsive li a:hover {background-color: #111;}
+
+  
+}
+
+@media screen and (max-width:1280px){
+	  
+  .topics div{
+	  display: block;
+	  	  width: 100%;
+
+  }
+}
+		
