@@ -1,2 +1,2 @@
-var data = $.getJSON("../phonesData.json");
-console.log(data);
+var phonesGroup = new app.phonesCollection(data);
+console.log(phonesGroup);
