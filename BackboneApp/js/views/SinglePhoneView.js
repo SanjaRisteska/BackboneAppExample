@@ -10,7 +10,7 @@ app.singlePhoneView = Backbone.View.extend({
     template: _.template($("#phoneElement").html()),
     
     initialize: function(){
-      console.log("Single phone view is created.");  
+      
     },
     
     render: function(){

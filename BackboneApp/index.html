@@ -28,9 +28,23 @@
                 
         </script>
         
+        <div id="phonePreviewSection">
+        
         
          <script id="phonePreview" type="text/template">
-              
+              <div id="phone-preview">
+                <ul>
+                    <li class="phoneInfo"><strong>Manufacturer:</strong> <%= manufacturer %></li>
+                    <li class="phoneInfo"><strong>Model:</strong> <%= model %></li>
+                    <li class="phoneInfo"><strong>Price:</strong> <%= price %></li>
+                    <li class="phoneInfo"><strong>Color:</strong> <%= color %></li>
+                    <li class="phoneInfo"><strong>Size:</strong> <%= size %></li>
+                    <li class="phoneInfo"><strong>Weight:</strong> <%= weight %></li>
+                    <li class="phoneInfo"><strong>CPU:</strong> <%= CPU %></li>
+                    <li class="phoneInfo"><strong>Primary camera:</strong> <%= primary_camera %></li>
+                    <li class="phoneInfo"><strong>Secondary camera:</strong> <%= secondary_camera %></li>
+                </ul>
+              <div>
         </script>
 
     </section>
@@ -46,8 +60,10 @@
     <script type="text/javascript" src="resource/phonesData.js"></script>
 
     <script src="js/models/SinglePhoneModel.js"></script> 
+    <script src="js/models/PhonePreviewModel.js"></script>
     <script src="js/views/SinglePhoneView.js"></script> 
     <script src="js/views/AllPhonesView.js"></script> 
+    <script src="js/views/PhonePreviewView.js"></script>
     <script src="js/collections/AllPhonesCollection.js"></script> 
     <script src="js/routers/Router.js"></script>
     <script src="js/main/PhoneStoreApp.js"></script>

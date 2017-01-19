@@ -11,6 +11,8 @@ app.phonePreviewView = Backbone.View.extend({
     },
     
     render: function(){
-       
+        var phonePreviewTemplate = this.template(this.model.toJSON());
+        this.$el.html(phonePreviewTemplate);
+        return this;
     }
 });

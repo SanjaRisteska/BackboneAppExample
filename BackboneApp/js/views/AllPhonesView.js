@@ -5,7 +5,7 @@ app.allPhonesView = Backbone.View.extend({
     tagName: "section",
 
     initialize: function(){
-      console.log("All phones view is created.");  
+      
     },
     
     render: function(){
@@ -16,7 +16,11 @@ app.allPhonesView = Backbone.View.extend({
     addPhone: function(phone){
         var phoneView =  new app.singlePhoneView({ model: phone });
         this.$el.append(phoneView.render().el);
-    }
+    },
+    
+    closeAllPhonewView: function() {
+		this.remove();
+	}
     
 
 });

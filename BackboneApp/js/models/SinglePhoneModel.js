@@ -9,7 +9,7 @@ app.singlePhone = Backbone.Model.extend({
     },
     
     initialize : function(){
-        console.log("Phone " +this.get("manufacturer")+" "+this.get("model")+" is created.");
+       
     }
 
 });
