@@ -11,7 +11,8 @@ app.Router = Backbone.Router.extend({
     },
     
     showFirstPage: function(){
-         $("#allPhones").show();
+        $("#phonePreviewSection").hide();
+        $("#allPhones").show();
     },
     
     showMoreInfoGalaxyS7Edge: function(){
@@ -19,6 +20,7 @@ app.Router = Backbone.Router.extend({
             manufacturer : "Samsung",
             model : "Galaxy S7 Edge",
             price : "510$",
+            img : "img/samsungS7.png",
             color : "Grey",
             size : "5.5 inches",
             weight : "157 g",
@@ -29,6 +31,7 @@ app.Router = Backbone.Router.extend({
         $("#allPhones").hide();
         var samsungS7Preview = new app.phonePreviewView({model : galaxyS7});
         $("#phonePreviewSection").html(samsungS7Preview.render().el);
+        $("#phonePreviewSection").show();
     },
     
     showMoreInfoiPhone7: function(){
@@ -45,9 +48,10 @@ app.Router = Backbone.Router.extend({
             primary_camera : "12 MP, f/1.8, 28mm, phase detection autofocus, OIS, quad-LED (dual tone) flash",
             secondary_camera : "7 MP, f/2.2, 32mm, 1080p@30fps, 720p@240fps, face detection, HDR, panorama"
         });
-        ("#allPhones").hide();
-        var samsungS7Preview = new app.phonePreviewView({model : iPhone7});
-        $("#phonePreviewSection").html(iPhone7.render().el);
+        $("#allPhones").hide();
+        var iPhonePreview = new app.phonePreviewView({model : iPhone7});
+        $("#phonePreviewSection").html(iPhonePreview.render().el);
+        $("#phonePreviewSection").show();
     },
     
     showMoreInfoGalaxyJ7: function(){
@@ -57,14 +61,16 @@ app.Router = Backbone.Router.extend({
             price : "240$",
             color : "Grey",
             size : "5.5 inches",
+            img : "img/samsungJ7.png",
             weight : "170 g",
             CPU : "Octa-core (4x1.6 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53) Octa-core 1.6 GHz Cortex-A53",
             primary_camera : "13 MP, f/1.9, 28mm, autofocus, LED flash",
             secondary_camera : "5 MP, f/1.9, LED flash"
         });
-        ("#allPhones").hide();
-        var samsungS7Preview = new app.phonePreviewView({model : galaxyJ7});
-        $("#phonePreviewSection").html(galaxyJ7.render().el);
+        $("#allPhones").hide();
+        var samsungJ7Preview = new app.phonePreviewView({model : galaxyJ7});
+        $("#phonePreviewSection").html(samsungJ7Preview.render().el);
+        $("#phonePreviewSection").show();
     },
     
     showMoreInfoHuaweiP9: function(){
@@ -74,14 +80,16 @@ app.Router = Backbone.Router.extend({
             price : "400$",
             color : "Rose gold  ",
             size : "5.2 inches",
+            img : "img/huaweiP9.png",
             weight : "144 g",
             CPU : "Octa-core (4x2.5 GHz Cortex-A72 & 4x1.8 GHz Cortex-A53)",
             primary_camera : "Dual 12 MP, f/2.2, 27 mm, Leica optics, phase detection autofocus, dual-LED (dual tone) flash",
             secondary_camera : "8 MP, f/2.4, 1080p"
         });
-        ("#allPhones").hide();
-        var samsungS7Preview = new app.phonePreviewView({model : HuaweiP9});
-        $("#phonePreviewSection").html(HuaweiP9.render().el);
+        $("#allPhones").hide();
+        var huaweiPreview = new app.phonePreviewView({model : HuaweiP9});
+        $("#phonePreviewSection").html(huaweiPreview.render().el);
+        $("#phonePreviewSection").show();
     },
     
     showMoreInfoNexus5: function(){
@@ -91,14 +99,16 @@ app.Router = Backbone.Router.extend({
             price : "300$",
             color : "White",
             size : "4.95 inches",
+            img : "img/nexus5.png",
             weight : "130 g",
             CPU : "Quad-core 2.3 GHz Krait 400",
             primary_camera : "8 MP, f/2.4, 30mm, autofocus, OIS, LED flash",
             secondary_camera : "1.3 MP, f/2.4, 1/6' sensor size, 1.9µm pixel size"
         });
-        ("#allPhones").hide();
-        var samsungS7Preview = new app.phonePreviewView({model : Nexus5});
-        $("#phonePreviewSection").html(Nexus5.render().el);
+        $("#allPhones").hide();
+        var nexusPreview = new app.phonePreviewView({model : Nexus5});
+        $("#phonePreviewSection").html(nexusPreview.render().el);
+        $("#phonePreviewSection").show();
     }
     
 });
