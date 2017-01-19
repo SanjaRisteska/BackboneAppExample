@@ -43,57 +43,6 @@
 		}
 
 
-        .home{
-            padding-top: 150px;
-            padding-bottom: 150px;
-			height: 100%;
-            
-        }
-
-        .home img{
-            width: 100px;
-            height: 100px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto
-        }
-
-        .home h1{
-            text-align: center;
-            font-size: 64pt;
-            margin: 10px;
-			font-weight: bold;
-
-        }
-
-        .home p{
-            text-align: center;
-        }
-
-		.buttons{
-			text-align: center;
-            outline: none;
-		}
-		
-        .home button{
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            color: white;
-            padding: 10px;
-			margin-right:5px;
-        }
-		
-		.leftButton{
-			background: none;
-			border: 1px solid white;
-		}
-		
-		.rightButton{
-			background: red;
-			border: 0;
-		}
-
         hr{
             width: 500px;
         }
@@ -103,7 +52,6 @@
             color: black;
             text-align: left;
             padding-bottom: 150px;
-			background:  white;
         }
 		
 		.topics span{
