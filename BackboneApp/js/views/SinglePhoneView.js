@@ -5,9 +5,7 @@ app.singlePhoneView = Backbone.View.extend({
     tagName: "article",
     className: "phoneItem",
     
-    events: {
-        'click #more-info-btn' : 'openPhonePreview'
-    },
+    events: {},
     
     template: _.template($("#phoneElement").html()),
     
@@ -19,9 +17,5 @@ app.singlePhoneView = Backbone.View.extend({
         var phoneTemplate = this.template(this.model.toJSON());
         this.$el.html(phoneTemplate);
         return this;
-    },
-    
-    openPhonePreview: function(){
-        alert(this.model.get('model'));
     }
 });

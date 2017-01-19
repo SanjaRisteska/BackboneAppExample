@@ -53,6 +53,10 @@
             text-align: left;
             padding-bottom: 150px;
         }
+
+        .topics ul{
+            list-style-type: none;
+        }
 		
 		.topics span{
 			color: #3BB9FF;
@@ -101,14 +105,27 @@
             padding: 10px;
         }
 		
-		
+        .button {
+          background-color: darkred;  
+          border-radius: 5px;
+          color: white;
+          padding: .5em;
+          text-decoration: none;
+          margin-left: 3em;
+        }
 
-@media screen and (max-width:1280px){
-	  
-  .topics div{
-	  display: block;
-	  	  width: 100%;
+        .button:focus,
+        .button:hover {
+          background-color: #D50000;
+        }
 
-  }
-}
+
+        @media screen and (max-width:1280px){
+
+          .topics div{
+              display: block;
+                  width: 100%;
+
+          }
+        }
 		
