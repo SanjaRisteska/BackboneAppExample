@@ -16,13 +16,7 @@ app.Router = Backbone.Router.extend({
     },
     
     showMoreInfoGalaxyS7Edge: function(){
-        var galaxyS7 = new app.phonePreview(
-        _.first(
-            _.filter(data,function(phone){
-            return phone.link === "GalaxyS7Edge";
-        })
-        )
-        );
+        var galaxyS7 = _.first(phonesGroup.where({link: "GalaxyS7Edge"}));
         $("#allPhones").hide();
         var samsungS7Preview = new app.phonePreviewView({model : galaxyS7});
         $("#phonePreviewSection").html(samsungS7Preview.render().el);
@@ -30,13 +24,7 @@ app.Router = Backbone.Router.extend({
     },
     
     showMoreInfoiPhone7: function(){
-       var iPhone7 = new app.phonePreview(
-       _.first(
-            _.filter(data,function(phone){
-            return phone.link === "iPhone7";
-        })
-        )
-       );
+       var iPhone7 = _.first(phonesGroup.where({link: "iPhone7"}));
         $("#allPhones").hide();
         var iPhonePreview = new app.phonePreviewView({model : iPhone7});
         $("#phonePreviewSection").html(iPhonePreview.render().el);
@@ -44,13 +32,7 @@ app.Router = Backbone.Router.extend({
     },
     
     showMoreInfoGalaxyJ7: function(){
-       var galaxyJ7 = new app.phonePreview(
-       _.first(
-            _.filter(data,function(phone){
-            return phone.link === "GalaxyJ7";
-        })
-        )
-       );
+       var galaxyJ7 = _.first(phonesGroup.where({link: "GalaxyJ7"}));
         $("#allPhones").hide();
         var samsungJ7Preview = new app.phonePreviewView({model : galaxyJ7});
         $("#phonePreviewSection").html(samsungJ7Preview.render().el);
@@ -58,13 +40,7 @@ app.Router = Backbone.Router.extend({
     },
     
     showMoreInfoHuaweiP9: function(){
-        var HuaweiP9 = new app.phonePreview(
-        _.first(
-            _.filter(data,function(phone){
-            return phone.link === "HuaweiP9";
-        })
-        )
-        );
+        var HuaweiP9 = _.first(phonesGroup.where({link: "HuaweiP9"}));
         $("#allPhones").hide();
         var huaweiPreview = new app.phonePreviewView({model : HuaweiP9});
         $("#phonePreviewSection").html(huaweiPreview.render().el);
@@ -72,13 +48,7 @@ app.Router = Backbone.Router.extend({
     },
     
     showMoreInfoNexus5: function(){
-       var Nexus5 = new app.phonePreview(
-       _.first(
-            _.filter(data,function(phone){
-            return phone.link === "Nexus5";
-        })
-        )
-       );
+       var Nexus5 = _.first(phonesGroup.where({link: "Nexus5"}));
         $("#allPhones").hide();
         var nexusPreview = new app.phonePreviewView({model : Nexus5});
         $("#phonePreviewSection").html(nexusPreview.render().el);
