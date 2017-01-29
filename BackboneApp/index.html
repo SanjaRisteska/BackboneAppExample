@@ -14,6 +14,25 @@
     </section>
 
     <section class="topics">
+        <div id="filters">
+            <div id="sort">Sort by:
+                <select id="sort-dropdown">
+                  <option value="Price (lowest->highest)">Price (lowest->highest)</option>
+                  <option value="Price (highest->lowest)">Price (highest->lowest)</option>
+                  <option value="poduct name (A-Z)">Poduct name (A-Z)</option>
+                  <option value="poduct name (Z-A)">Poduct name (Z-A)</option>
+                </select>
+            </div>
+
+            <div id="filter">Filter by manufacturer:    
+                <select id="filter-dropdown">
+                  <option value="samsung">Samsung</option>
+                  <option value="apple">Apple</option>
+                  <option value="huawei">huawei</option>
+                  <option value="lg">lg</option>
+                </select>
+            </div>
+        </div>
         <div id="allPhones"></div>
 
         <script id="phoneElement" type="text/template">

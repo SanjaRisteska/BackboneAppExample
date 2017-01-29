@@ -47,11 +47,31 @@
             width: 500px;
         }
 
+        
+        #filters{
+            max-width: 80%;
+            margin: auto;
+            padding-top: 20px;
+            
+        }
+        #sort-dropdown, #filter-dropdown{
+            display: inline-block;
+            padding: 4px 3px 5px 5px;
+            width: 200px;
+            outline: none;
+            color: black;
+            border: 1px solid #C8BFC4;
+            border-radius: 4px;
+            box-shadow: inset 1px 1px 2px #ddd8dc;
+            background-color: white;
+        }
+
         .topics{
-            padding: 100px;
+            max-width: 80%;
+            margin: auto;
             color: black;
             text-align: left;
-            padding-bottom: 150px;
+            padding-bottom: 100px;
         }
 
         .topics ul{
@@ -99,8 +119,8 @@
         }
 
         .image{
-            width: 150px;
-            height: 150px;
+            max-width: 150px;
+            max-height: 200px;
             margin: auto;
             padding: 10px;
         }
