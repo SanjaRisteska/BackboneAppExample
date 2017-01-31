@@ -1,8 +1,12 @@
+/*var onePhone = new app.singlePhone({id:5, manufacturer:"Sanja", model:"Nate"});
+onePhone.save();*/
 
-var phonesGroup = new app.phonesCollection(data);
+var phonesGroup = new app.phonesCollection();
+
 
 var phonesGroupView = new app.allPhonesView({collection: phonesGroup});
-$("#allPhones").html(phonesGroupView.render().el);
+
+
 
 var phonesRouter = new app.Router();
 
